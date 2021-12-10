@@ -1,0 +1,89 @@
+#nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+    border:  1px solid black;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+    #option{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    }
+
+   a{
+    text-decoration: none;
+    }
+
+
+    #data{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-gap: 20px;
+        justify-content: center;
+        padding: 5%;
+    }
+
+    img{
+        width: 60%;
+    }
+
+    body{
+        background-color: wheat;
+        color: maroon;
+        text-align: center;
+    }
+    
+    #box{
+        width: 98%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+       grid-gap: 3%;
+       margin: auto;
+       
+
+    }
+
+    #box > div, #rand > div{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+
+
+    
+    input{
+        
+        margin-left: 1%;
+        width: 51%;
+        height: 42px;
+        margin-bottom: 20px;
+    }
+    button{
+        width: 60px;
+        height: 46px;
+        color: white;
+        background-color: red;
+        margin-left: 10px;
+    }
+
+   #watch{
+       width: 150px;
+       margin-bottom: 5px;
+   }
+#random{
+ margin: auto;
+width: 160px;
+}
+
+#rand{
+    margin: auto;
+    width: 500px;
+    justify-content: center;
+}
+#rand > div > img{
+    width: 300px;
+}
+  

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div id="container"></div>
+    <button id="random">Random Meal</button>
+    <div id="rand"></div>
+</body>
+</html>
+
+
+<script type="module">
+  
+    import navbar from "./components/nav.js"
+  
+    let dataDiv = document.getElementById("rand");
+    
+  
+    let container = document.getElementById("container");
+    container.innerHTML = navbar();
+
+     
+     import {getData, appendData, AppendData} from "./scripts/showData.js"
+    
+     
+     let response =  await getData(`https://www.themealdb.com/api/json/v1/1/random.php`)
+   
+     let res = response.meals;
+   console.log(res)
+    
+   document.getElementById("random").addEventListener("click", function()
+  {
+    console.log(res)
+    appendData(res, dataDiv )
+  })
+
+  
+    
+  
+  
+  </script>
