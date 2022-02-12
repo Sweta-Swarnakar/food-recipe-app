@@ -1,7 +1,7 @@
 function navbar()
 {
     return ` <div id="nav">
-    <h3><a href="lastestFood.html">Lastest Recipes</a></h3>
+    <h3><a href="index.html">Lastest Recipes</a></h3>
 
 
 <div id="option">
